@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App Login</title>
+    <link rel="stylesheet" href="style.css"> <!-- Liên kết đến file CSS chung -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" id="username" placeholder="Enter username" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="help">
+            <!-- Liên kết "Quên mật khẩu" và "Đăng ký" -->
+            <p><a href="#">Forgot password?</a></p>
+            <p><a href="Singin.html">New user? Sign up here</a></p>
+        </div>
+
+        <div class="social-icons">
+            <!-- Các icon mạng xã hội -->
+            <a href="#"><img src="FB.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="pinterest-icon.png" alt="Pinterest"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+        <p id="error-message"></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

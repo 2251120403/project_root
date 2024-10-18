@@ -1,0 +1,101 @@
+﻿/* Định dạng chung cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Màu nền tối */
+    color: #fff; /* Màu chữ trắng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao màn hình */
+}
+
+/* Định dạng chung cho container form */
+.form-container {
+    background: rgba(0, 0, 0, 0.8); /* Nền màu đen mờ */
+    padding: 40px; /* Khoảng cách bên trong hộp */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Đổ bóng cho hộp */
+    text-align: center;
+    width: 40%; /* Chiều rộng hộp */
+}
+
+    .form-container h1, .form-container h2 {
+        margin-bottom: 30px;
+        font-size: 24px; /* Kích thước chữ */
+        letter-spacing: 2px; /* Khoảng cách giữa các ký tự */
+    }
+
+    /* Định dạng chung cho các input */
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="email"] {
+        width: 100%; /* Chiếm 100% chiều rộng hộp cha */
+        padding: 10px;
+        margin: 10px 0; /* Khoảng cách trên và dưới ô */
+        border: none; /* Loại bỏ đường viền */
+        border-radius: 5px; /* Bo tròn các góc */
+        background: #444; /* Màu nền xám đậm */
+        color: #fff; /* Màu chữ trắng */
+    }
+
+    /* Định dạng chung cho các nút hành động */
+    .form-container button[type="submit"],
+    .form-container button[type="reset"] {
+        background: #fff; /* Nền màu trắng */
+        color: #000; /* Chữ màu đen */
+        border-radius: 10px; /* Bo tròn các góc */
+        cursor: pointer;
+        font-size: 16px; /* Kích thước chữ */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        padding: 10px;
+    }
+
+    .form-container button:hover {
+        background-color: #3e8e41; /* Hiệu ứng hover màu xanh lá đậm */
+    }
+
+
+/* Định dạng phần thông báo lỗi */
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Định dạng chung cho phần liên kết */
+.form-container a {
+    color: #8aa8aa; /* Màu liên kết xanh nhạt */
+    text-decoration: none;
+}
+
+    .form-container a:hover {
+        text-decoration: underline;
+    }
+
+/* Định dạng phần icon mạng xã hội */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Căn giữa các icon */
+    margin-top: 20px;
+}
+
+    .social-icons a {
+        margin: 0 10px; /* Khoảng cách giữa các icon */
+    }
+
+    .social-icons img {
+        width: 32px; /* Chiều rộng icon */
+        height: 32px; /* Chiều cao icon */
+    }
+
+/* Phần trợ giúp và liên kết */
+.help {
+    margin: 15px 0; /* Khoảng cách trên và dưới */
+    color: #fff;
+}
+
+    .help a {
+        color: #8aa8aa; /* Màu chữ cho liên kết */
+    }
